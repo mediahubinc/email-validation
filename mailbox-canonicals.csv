@@ -1,0 +1,5 @@
+Vendor,Search,Replace,Comment
+google,\+.*$,,"Remove mailbox `+tag`"
+google,\.,,"Remove dot decorator"
+microsoft,\+.*$,,"Remove mailbox `+tag`"
+yahoo,-.*,,"Remove disposable `-keyword`"
