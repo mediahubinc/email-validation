@@ -16,3 +16,6 @@ For example, Google is allowing `.` (dot) and `+tag` as a decorator, i.e. `john.
 A list of vendor rules applied to the mailbox during delivery (after cleaning up the decorations, see `mailbox-canonicals.csv` section above).
 Mailbox should match the regular expression rule to succeed, unless it's marked as `inverted`.
 `Comment` field could be used to form a human-readable error message during the validation.
+
+## `disposable.csv`
+A list of domains for disposable and temporary email addresses.
