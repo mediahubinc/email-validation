@@ -1,6 +1,11 @@
 Vendor,Rule,Inverted,Comment
 aol,"/^[a-z][a-z0-9_.]{2,30}[a-z0-9]$/i",0,"2-64 letters, numbers or special characters (lo-dash, dot) are allowed"
 aol,/[._]{2}/,1,More than one dot or lo-dash in a row is not allowed
+apple,"/^[a-z0-9_.]{3,20}$/i",0,"3-20 letters, numbers or special characters (lo-dash, dot) are allowed"
+apple,/^[a-z]/i,0,Must start with a letter
+apple,/[a-z0-9]$/i,0,Must end with a letter or number
+apple,/__/,1,Two underscores in a row are not allowed
+apple,/\.\./,1,Two dots in a row are not allowed
 google,"/^[0-9a-z]{6,30}$/i",0,6-30 letters/numbers are allowed
 google,/^(abbott|abraham|adalberto|adamaris|addison|adelaide|adelard|adelia|adelina|adeline)$/i,1,Name is not allowed
 google,/^(adella|adolfo|adolph|adrian|adriana|adriane|adrianna|adrianne|adrienne|agatha)$/i,1,Name is not allowed
